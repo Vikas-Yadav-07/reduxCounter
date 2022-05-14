@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+*
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: white;
+    color: white;
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
+}
+h1
+{
+    text-align: center;
+    color:purple;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 50px;
+    font-family: cursive;
+    word-wrap: normal;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    transition: 1s ease ;
+
+}
+h1:hover{
+    word-spacing: -10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.counter
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    color: black;
+   
+
+   
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.incDec{
+    /* font-size: 40px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    padding: 40px;
+    color: purple;
+    font-weight: 900;
+    outline: 2px solid purple;
+    width: 80px;height: 80px;
+    border-radius: 50%;
+    padding: 50px;
+    margin: 50px;
+    transition: 0.5s ease;
+}
+.incDec:hover
+{
+    background-color: purple;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
+.value 
+{
+    font-size: 300px;
+    color: purple;
+    border: 1px solid purple;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    user-select: none;
+    cursor: text;
+    transition: 0.3s ease;
+    
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.value:hover
+{
+    font-size: 150px;
+    height: 300px;width: 300px;
+    background-color: purple;
+    color: white;
+}
+.incDecContainer{ 
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    font-size:60px;
+    
 }
